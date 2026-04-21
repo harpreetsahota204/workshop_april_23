@@ -1,0 +1,8 @@
+fiftyone
+torch
+torchvision
+transformers
+timm
+open-clip-torch
+umap-learn
+ultralytics
