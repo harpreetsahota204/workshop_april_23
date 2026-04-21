@@ -34,9 +34,10 @@ brew install ffmpeg
 ### Windows
 
 1. Install Python 64-bit (3.9–3.12) from [python.org](https://www.python.org/downloads/) (not Microsoft Store)
+
 2. Install [Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)
-3. Install [Git](https://git-scm.com/download/win)
-4. Optional FFmpeg: [ffmpeg.org](https://ffmpeg.org/download.html#build-windows)
+
+4. Optional FFmpeg (if you plan on working with Video later): [ffmpeg.org](https://ffmpeg.org/download.html#build-windows)
 
 ---
 
@@ -163,13 +164,23 @@ qwen35_model     = foz.load_zoo_model("Qwen/Qwen3.5-2B", media_type="image", ope
 ```
 
 References:
-- [FiftyOne Model Zoo](https://docs.voxel51.com/model_zoo/overview.html) · [Remote-source models](https://docs.voxel51.com/model_zoo/remote.html#working-with-remotely-sourced-models)
-- Remote repos: [qwen3vl_embeddings](https://github.com/harpreetsahota204/qwen3vl_embeddings) · [qwen3_5_vl](https://github.com/harpreetsahota204/qwen3_5_vl)
+
+- [FiftyOne Model Zoo](https://docs.voxel51.com/model_zoo/overview.html) 
+
+- [Remote-source models](https://docs.voxel51.com/model_zoo/remote.html#working-with-remotely-sourced-models)
+
+Remote repos: 
+
+- [qwen3vl_embeddings](https://github.com/harpreetsahota204/qwen3vl_embeddings) 
+
+- [qwen3_5_vl](https://github.com/harpreetsahota204/qwen3_5_vl)
 
 ---
 
 ## Notes
 
 - First model load/download can take time depending on model size and network.
+
 - If using GPU, make sure your PyTorch install matches your CUDA setup.
+
 - `ultralytics` is included for the YOLO-based workflows used in the notebook.
